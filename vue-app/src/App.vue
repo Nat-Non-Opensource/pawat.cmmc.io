@@ -22,7 +22,7 @@ export default {
       axios
         .get('/api/version')
         .then(response => {
-          console.log(`version=${response.data}`)
+          console.log(`API Version = ${response.data}`)
         })
         .catch(error => {
           console.error('error:', error.status, error)
